@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое мини-приложение</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Мое приложение</h1>
+            <p>Добро пожаловать в мини-приложение Telegram!</p>
+        </div>
+        
+        <div class="user-info" id="userInfo">
+            <!-- Информация о пользователе будет вставлена через JS -->
+        </div>
+        
+        <div class="settings-form">
+            <h2>Настройки профиля</h2>
+            
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" placeholder="Введите ваше имя">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Введите ваш email">
+            </div>
+            
+            <div class="form-group checkbox">
+                <label>
+                    <input type="checkbox" id="notifications" checked>
+                    Получать уведомления
+                </label>
+            </div>
+            
+            <button class="btn-primary" onclick="saveSettings()">Сохранить настройки</button>
+            <button class="btn-secondary" onclick="sendMessage()">Отправить сообщение</button>
+        </div>
+        
+        <div class="actions">
+            <button class="btn-close" onclick="closeApp()">Закрыть приложение</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
